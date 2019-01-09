@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, a:focus, a:hover, h1,h2,h3,h4 {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+nav {
+	margin: 0.7em;
+}
+
+.bold, .nav-brand, .download-button, {
+	font-weight: bold;
+}
+
+.main-nav, #download-wrapper, #messages, #keep-in-touch {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+
+#download h1, .messaging-container h1, #keep-in-touch h1 {
+	font-size: 50pt;
+	font-weight: bold;
+}
+
+#download h1, #features h2 {
+	color: white;
+}
+
+.main-nav {
+	justify-content: space-between;
+}
+
+.main-nav a:hover {
+	color: #cfcccc;
+	transition: 0.5s;
+}
+
+.main-nav li:first-child {
+	margin-right: auto;
+}
+
+.main-nav li:nth-child(n+2) {
+	margin-right: 2em;
+	margin-top: 0.6em;
+}
+
+.main-nav li:last-child {
+	margin-right: 1em;
+}
+
+.nav-brand {
+	font-size: 30pt;
+}
+
+#download-wrapper, #features, .sub_btn, #app-logo {
+	background-image: -moz-linear-gradient( 90deg, rgb(235,64,44) 0%, rgb(217,6,71) 100%);
+  	background-image: -webkit-linear-gradient( 90deg, rgb(235,64,44) 0%, rgb(217,6,71) 100%);
+  	background-image: -ms-linear-gradient( 90deg, rgb(235,64,44) 0%, rgb(217,6,71) 100%);
+}
+#download-wrapper {
+	padding-top: 12em;
+}
+
+.download-container {
+	flex: 1;
+	margin:0 auto;
+	padding-left: 10em;
+	padding-top: 3.7em;
+	line-height: 4em;
+	z-index: 1;
+}
+
+.download-container h3 {
+	letter-spacing: 0.1em;
+	color: white;
+}
+
+.iphone {
+	margin-right: 12em;
+	max-width: 600px;
+	z-index: 2;
+	height: 600px;
+}
+
+
+.download-button {
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	padding-left: 2em;
+	padding-right: 2em;
+	background: white;
+	border-radius: 2em;
+	color: #e01e3c;
+}
+
+.download-button:hover {
+	color: red;
+}
+
+#messages {
+	margin-top: 8em;
+}
+
+#messages:before {
+	content: '';
+    position: absolute;
+    width: 120%;
+    height: 25em;
+    background: white;
+    transform: rotate(-7deg);
+    top: 39em;
+}
+
+.conversations {
+	display: block;
+}
+.conversation-image {
+	position: absolute;
+    z-index: 2;
+    left: 8em;
+}
+
+.conversation-image:nth-child(1) {
+	z-index: 3;
+    margin-top: 3.5em;
+    left: 19em;
+}
+
+#messages h1, #keep-in-touch,  h1, h2, h3 {
+	color: black;
+}
+
+#messages h3, #keep-in-touch h3 {
+	color: #808080;
+	margin-left: 0.25em;
+}
+
+.messaging-container, .keep-in-touch-container {
+	margin-top: 13em;
+}
+
+.messaging-container {
+	margin-right: 10em;
+    margin-left: 50em;
+}
+
+#keep-in-touch {
+	margin-top: 20em;
+	margin-bottom: 22em;
+}
+
+.keep-in-touch-container {
+	margin-left: 10em;
+	margin-right: 50em;
+}
+
+.keep-in-touch-image {
+	position: absolute;
+	left: 60em;
+}
+
+.keep-in-touch-image:nth-child(2) {
+	z-index: 2;
+	left: 45em;
+	margin-top: 4.2em;
+}
+
+.divider {
+	border: 0.02em solid lightgrey;
+	box-shadow: 1px;
+	margin-top: 10em;
+	margin-bottom: 5em;
+}
+
+#people-say {
+	margin-bottom: 15em;
+}
+
+#people-say h1, #subscribe h1, #download_app h1 {
+	font-size: 40pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+#people-say h1 {
+	margin-bottom: 2em;	
+}
+
+
+.feedback-container, .sub_field {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.feedback {
+	margin-right: 1em;
+}
+
+blockquote {
+	border: 1px solid lightgrey;
+	position: relative;
+	background-color: #ffffff;
+	padding: 1.2em;
+}
+
+blockquote:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 0.5em solid transparent;
+	border-top-color: lightgrey;
+	border-bottom: 0;
+	margin-left: 1.4em;
+	margin-bottom: -0.550em;
+}
+
+blockquote:hover {
+	transform: translateY(-1.875rem);
+	box-shadow: 0 30px 60px 0 rgba(54, 54, 54, 0.15);
+	transition: 0.5s ease-in-out;
+}
+
+.profile-photo {
+	width: 4em;
+	margin-top: 1.2em;
+	border-radius: 2em;
+	float: left;
+}
+
+.fullname, .position {
+	margin-left: 5em;
+}
+.fullname {
+	color: grey;
+	margin-top: 2.3em;
+}
+
+.position {
+	color: silver;
+}
+
+#features {
+	display: flex;
+	height: 493px;
+}
+#features h3 {
+	color: #f5acae;
+}
+.column_1, .column_3 {
+	margin-top: 8em;
+	text-align: right;
+	flex: 1;
+}
+
+.column_1 h2, .column_3 h2{
+	font-weight: bold;
+	font-size: 15pt;
+}
+
+.column_1 h3, .column_3 h3 {
+	padding: 1em;
+}
+
+.column_1 {
+	margin-right: 4.5em;
+}
+
+.column_3 {
+	margin-left: 4.5em;
+}
+
+.column_1 h2 {
+	position: relative;
+}
+
+.conversation h2 {
+	left: 1.5em;
+}
+
+.call h2 {
+	left: 1.8em;
+}
+
+.column_2 {
+	position: relative;
+	bottom: 80px;
+	height: 700px;
+}
+
+.column_3 {
+	text-align: left;
+}
+
+.column_3 h2 {
+	text-align: left;
+	position: relative
+}
+
+.take_a_pic h2 {
+	right: 1.8em;
+}
+
+.send_ur_video h2 {
+	right: 1.7em;
+}
+.icon_left, .icon_right {
+	position: relative;
+	top: 1em;
+}
+.icon_left {
+	left: 2em;
+}
+
+.icon_right {
+	right: 2em;
+}
+
+#subscribe {
+	margin-top: 15em;
+}
+
+#subscribe h1 {
+	margin-bottom: 0.5em;
+}
+
+#subscribe h3, #download_app h3 {
+	text-align: center;
+	color: grey;
+}
+
+.email {
+	background-color: #f8f8f8;
+	border-radius: 2em 0 0 2em;
+	padding-left: 2em;	
+	border: 0;
+	width: 40em;
+	height: 4em;
+}
+
+.email:focus {
+	outline: 0;
+}
+
+.sub_field {
+	margin-top: 3em;	
+}
+
+.sub_btn {
+	display: inline-block;
+    width: 12em;
+    height: 4.3em;
+    color: white;
+    border-radius: 3em;
+    font-weight: bold;
+    position: relative;
+    right: 1.8em;
+    border: 0;
+    outline: 0;
+}
+
+.sub_btn {
+	box-shadow: 0 0 10em #f8ccd4;	
+}
+.sub_btn:hover, .download-button:hover  {
+	box-shadow: 0 0 15em #f8ccd4;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+#app-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+	color: white;
+	font-size: 65pt;
+	border-radius: 0.4em;
+	box-shadow: 0px 10px 30px 0px rgba(223, 27, 61, 0.3)
+}
+
+#download_app {
+	display: flex;
+	flex-direction: column;
+}
+#download_app h1 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+#download_app h3 {
+	margin-bottom: 2em;
+}
+
+.app-store-badge {
+	margin-bottom: 5em;
+}
+
+
+
+
+
+
+
+
+
