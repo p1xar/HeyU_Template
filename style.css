@@ -463,8 +463,7 @@ blockquote:hover {
 */
 
 @media (min-width: 1281px) {
-  
-  
+		  
 }
 
 /* 
@@ -472,9 +471,43 @@ blockquote:hover {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1125px) and (max-width: 1280px) {
+	.iphone {
+		margin-right: 2em;
+	}
 
-  
+	.download-container {
+		padding-left: 6em;
+	}
+
+	.conversation-image {
+		left: 2em;
+		width: 30%; 
+	}
+
+	.conversation-image:nth-child(1) {
+		left: 10em; 
+	}
+
+	.messaging-container {
+		margin-left: 35em;
+		margin-right: 2em;
+	}
+
+	.keep-in-touch-container {
+		margin-left: 3em;
+		margin-right: 35em;
+	}
+
+	.keep-in-touch-image {
+		left: 50em;
+		width: 25%;
+	}
+	.keep-in-touch-image:nth-child(2) {
+		left: 43em;
+		width: 30%;
+	} 
+
 }
 
 /* 
@@ -482,7 +515,7 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1125px) {
   
   
 }
