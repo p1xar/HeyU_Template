@@ -65,10 +65,11 @@ nav {
 	font-weight: bold;
 }
 
-.main-nav, #download-wrapper, #messages, #keep-in-touch {
+.main-nav, #download-wrapper, #iphone-wrapper, #messages, #keep-in-touch, .conversations, .keep-in-touch-image-container {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 #download h1, .messaging-container h1, #keep-in-touch h1 {
@@ -111,6 +112,7 @@ nav {
   	background-image: -webkit-linear-gradient( 90deg, rgb(235,64,44) 0%, rgb(217,6,71) 100%);
   	background-image: -ms-linear-gradient( 90deg, rgb(235,64,44) 0%, rgb(217,6,71) 100%);
 }
+
 #download-wrapper {
 	padding-top: 12em;
 }
@@ -122,6 +124,7 @@ nav {
 	padding-top: 3.7em;
 	line-height: 4em;
 	z-index: 1;
+	width: 60%;
 }
 
 .download-container h3 {
@@ -129,10 +132,15 @@ nav {
 	color: white;
 }
 
+#iphone-wrapper {
+	justify-content: center;
+	width: 40%;
+	z-index: 2;
+}
+
 .iphone {
 	margin-right: 12em;
 	max-width: 600px;
-	z-index: 2;
 	height: 600px;
 }
 
@@ -166,18 +174,20 @@ nav {
 }
 
 .conversations {
-	display: block;
+	width: 50%;
+	justify-content: center;
 }
+
 .conversation-image {
 	position: absolute;
     z-index: 2;
-    left: 8em;
+    
 }
 
 .conversation-image:nth-child(1) {
 	z-index: 3;
     margin-top: 3.5em;
-    left: 19em;
+    margin-left: 6em;
 }
 
 #messages h1, #keep-in-touch,  h1, h2, h3 {
@@ -191,11 +201,13 @@ nav {
 
 .messaging-container, .keep-in-touch-container {
 	margin-top: 13em;
+	line-height: 1.8em;
 }
 
 .messaging-container {
-	margin-right: 10em;
-    margin-left: 50em;
+	width: 50%;
+	padding-right: 8em;
+	max-width: 35em;
 }
 
 #keep-in-touch {
@@ -204,19 +216,23 @@ nav {
 }
 
 .keep-in-touch-container {
-	margin-left: 10em;
-	margin-right: 50em;
+	width: 50%;
+	padding-left: 8em;
+	max-width: 33em;
+}
+
+.keep-in-touch-image-container {
+	width: 50%;
+	justify-content: center;
 }
 
 .keep-in-touch-image {
 	position: absolute;
-	left: 60em;
 }
 
 .keep-in-touch-image:nth-child(2) {
-	z-index: 2;
-	left: 45em;
 	margin-top: 4.2em;
+	margin-left: -8.5em;
 }
 
 .divider {
@@ -249,6 +265,10 @@ nav {
 
 .feedback {
 	margin-right: 1em;
+}
+
+.feedback:last-of-type {
+	margin-right: 0em;
 }
 
 blockquote {
@@ -457,57 +477,32 @@ blockquote:hover {
 }
 
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-		  
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1125px) and (max-width: 1280px) {
-	.iphone {
-		margin-right: 2em;
+@media (min-width: 1025px) and (max-width: 1280px) {
+	#iphone-wrapper {
+		width: 30%;
 	}
 
 	.download-container {
-		padding-left: 6em;
+		padding-left: 8em;
 	}
 
-	.conversation-image {
-		left: 2em;
-		width: 30%; 
-	}
-
-	.conversation-image:nth-child(1) {
-		left: 10em; 
+	.messaging-container, .keep-in-touch-image-container {
+		width: 40%;
+    	
 	}
 
 	.messaging-container {
-		margin-left: 35em;
-		margin-right: 2em;
+		padding-right: 3em;
+	}
+
+	#download h1, .messaging-container h1, #keep-in-touch h1 {
+		font-size: 43pt;
 	}
 
 	.keep-in-touch-container {
-		margin-left: 3em;
-		margin-right: 35em;
+		max-width: 25em;
+		padding-left: 5em;
 	}
-
-	.keep-in-touch-image {
-		left: 50em;
-		width: 25%;
-	}
-	.keep-in-touch-image:nth-child(2) {
-		left: 43em;
-		width: 30%;
-	} 
-
 }
 
 /* 
@@ -515,7 +510,7 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1125px) {
+@media (min-width: 768px) {
   
   
 }
@@ -525,7 +520,7 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
   
   
 }
@@ -535,7 +530,7 @@ blockquote:hover {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) {
   
   
 }
