@@ -237,7 +237,6 @@ nav {
 
 .divider {
 	border: 0.02em solid lightgrey;
-	box-shadow: 1px;
 	margin-top: 10em;
 	margin-bottom: 5em;
 }
@@ -478,6 +477,10 @@ blockquote:hover {
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+	.iphone {
+		display: block;
+	}
+
 	#iphone-wrapper {
 		width: 30%;
 	}
@@ -510,9 +513,136 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) {
-  
-  
+@media (min-width: 768px) and (max-width: 1024px) {
+	.iphone {
+		display: none;
+	}
+
+	#download-wrapper, #messages, #keep-in-touch {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	#messages, #keep-in-touch, blockquote {
+		font-size: 16pt;
+		padding: 2em;
+	}
+
+	#download-wrapper {
+		padding-top: 6em;
+		padding-bottom: 4em;
+	}
+
+	.download-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	#messages:before {
+		display: none;
+	}
+
+	#messages, #keep-in-touch {
+		margin: 0;
+	}
+
+	.conversations {
+		display: none;
+	}
+
+	.messaging-container, .keep-in-touch-container {
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 3em;
+	}
+
+	.keep-in-touch, .keep-in-touch-container {
+		margin: 0;
+	}
+
+	.keep-in-touch-image-container {
+		display: none;
+	}
+
+	.divider {
+		border: 0.03em solid lightgrey;
+    	margin-top: 3em;
+    	margin-bottom: 5em;
+	}
+
+	.feedback-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.feedback {
+		margin: 0;
+		margin-top: 2em;
+	}
+
+	.feedback:first-of-type {
+		margin-top: 0;
+	}
+
+	blockquote {
+		line-height: 1.3em;
+		text-align: center;
+	}
+
+	blockquote:after {
+		margin-left: 0.9em;
+	}
+
+	#features {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 16pt;
+	}
+
+	#features, #subscribe, #download_app {
+		font-size: 16pt;
+	}
+
+	.icon_left, .icon_right {
+		display: none;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+
+	.column_1, .column_3 {
+		margin: 0;
+		flex: auto;
+	}
+
+	.column_2 {
+		display: none;
+	}
+
+	.column_1 h2, .column_3 h2, .column_1 h3, .column_3 h3 {
+		position: unset;
+	}
+
+	.conversation h2, .call h2, .take_a_pic h2, .send_ur_video h2 {
+		display: flex;
+		justify-content: center;
+		left: 0em;
+		font-size: 18pt;
+	}
+
+	.conversation h3, .call h3, .take_a_pic h3, .send_ur_video h3 {
+		text-align: center;
+	}
+
+	#subscribe {
+		margin-top: 5em;
+		padding: 1em;
+	}
+
 }
 
 /* 
@@ -520,9 +650,8 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (orientation: landscape) {
-  
-  
+@media (min-width: 482px) and (orientation: landscape) and (max-width: 767px) {
+	
 }
 
 /* 
