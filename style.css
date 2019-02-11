@@ -646,7 +646,6 @@ blockquote:hover {
 	#download_app {
 		padding: 2em;
 	}
-
 }
 
 /* 
@@ -654,8 +653,171 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 482px) and (orientation: landscape) and (max-width: 767px) {
-	
+@media (min-width: 482px) and (max-width: 767px) {
+	#download br {
+		display: none;
+	}
+
+	.iphone {
+		display: none;
+	}
+
+	.download-container h3 {
+		line-height: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#download-wrapper, #messages, #keep-in-touch {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	#messages, #keep-in-touch, blockquote {
+		font-size: 16pt;
+		padding: 2em;
+	}
+
+	#download-wrapper {
+		padding-top: 6em;
+		padding-bottom: 4em;
+	}
+
+	.download-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	#messages:before {
+		display: none;
+	}
+
+	#messages, #keep-in-touch {
+		margin: 0;
+	}
+
+	.conversations {
+		display: none;
+	}
+
+	.messaging-container, .keep-in-touch-container {
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 3em;
+	}
+
+	.messaging-container h1, #keep-in-touch h1 {
+		font-size: 42pt;
+	}
+
+	.keep-in-touch, .keep-in-touch-container {
+		margin: 0;
+	}
+
+	.keep-in-touch-image-container {
+		display: none;
+	}
+
+	.divider {
+		border: 0.03em solid lightgrey;
+    	margin-top: 3em;
+    	margin-bottom: 5em;
+	}
+
+	#people-say {
+		margin-bottom: 3em;
+	}
+
+	.feedback-container {
+		flex-direction: column;
+		align-items: center;
+		padding: 2em;
+	}
+
+	.feedback {
+		margin: 0;
+		margin-top: 3em;
+	}
+
+	.feedback:first-of-type {
+		margin-top: 0;
+	}
+
+	blockquote {
+		line-height: 1.3em;
+		text-align: center;
+	}
+
+	blockquote:after {
+		margin-left: 0.9em;
+	}
+
+	#features {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		padding: 1em;
+	}
+
+	#features, #subscribe, #download_app {
+		font-size: 20pt;
+	}
+
+	.icon_left, .icon_right {
+		display: none;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+
+	.column_1, .column_3 {
+		margin: 0;
+		flex: auto;
+	}
+
+	.column_2 {
+		display: none;
+	}
+
+	.column_1 h2, .column_3 h2, .column_1 h3, .column_3 h3 {
+		position: unset;
+	}
+
+	.conversation h2, .call h2, .take_a_pic h2, .send_ur_video h2 {
+		display: flex;
+		justify-content: center;
+		left: 0em;
+		font-size: 18pt;
+	}
+
+	.conversation h3, .call h3, .take_a_pic h3, .send_ur_video h3 {
+		text-align: center;
+	}
+
+	#subscribe {
+		margin-top: 3em;
+		padding: 2em;
+	}
+
+	#download_app {
+		padding: 2em;
+	}
+
+	.email {
+		width: 20em;
+	}
+
+	.sub_btn {
+		width: 8em;
+	}
+
+	.app-store-badge {
+		margin-bottom: 3em;
+	}		
 }
 
 /* 
