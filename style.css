@@ -639,8 +639,12 @@ blockquote:hover {
 	}
 
 	#subscribe {
-		margin-top: 5em;
-		padding: 1em;
+		margin-top: 3em;
+		padding: 2em;
+	}
+
+	#download_app {
+		padding: 2em;
 	}
 
 }
