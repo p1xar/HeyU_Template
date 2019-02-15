@@ -477,6 +477,9 @@ blockquote:hover {
 
 .app-store-badge {
 	margin-bottom: 5em;
+	width: 160px;
+	height: 54px;
+	align-self: center;
 }
 
 
