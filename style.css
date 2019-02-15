@@ -54,7 +54,7 @@ a, a:focus, a:hover, h1,h2,h3,h4 {
 header {
 	position: fixed;
 	width: 100%;
-	z-index: 3;
+	z-index: 999;
 }
 
 nav {
