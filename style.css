@@ -525,6 +525,10 @@ blockquote:hover {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+	header {
+		background-color: rgb(217,6,71);
+	}
+
 	.iphone {
 		display: none;
 	}
@@ -664,6 +668,18 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
+@media (min-width: 767px) {
+	header {
+		background-color: rgb(217,6,71);
+	}
+
+	.main-nav li:nth-child(n+2) {
+		opacity: 1 !important;
+		visibility: visible !important;
+		max-height: auto;	
+	}
+}
+
 @media (min-width: 482px) and (max-width: 767px) {
 	header {
 		background-color: rgb(217,6,71);
@@ -695,6 +711,7 @@ blockquote:hover {
 		align-self: flex-end;
 		font-size: 30pt;
 		right: 0.5em;
+		color: white;
 	}
 
 	#download br {
@@ -900,8 +917,9 @@ blockquote:hover {
 		align-self: flex-end;
 		font-size: 30pt;
 		right: 0.5em;
+		color: white;
 	}
-	
+
 	#download br {
 		display: none;
 	}
