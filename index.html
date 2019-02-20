@@ -155,7 +155,6 @@ ex ea commodo consequat.</h3>
 
 				window.addEventListener("scroll",function(){
 				  var target = document.getElementsByTagName('header');
-				  var val = document.getElementsByTagName('p');
 				  if(window.pageYOffset > 50){
 				   target[0].style.background = "rgb(217,6,71)"; 
 				   target[0].style.boxShadow = "0 1px 10px rgba(0, 0, 0, 0.3)"; 
@@ -164,7 +163,6 @@ ex ea commodo consequat.</h3>
 				    target[0].style.background = "transparent";
 				    target[0].style.boxShadow = "0 0 0 rgba(0, 0, 0, 0)"; 
 				  }
-				  val[0].innerHTML = 'PageYOffset = ' + window.pageYOffset;
 				},false);
 		</script>
 	</body>
