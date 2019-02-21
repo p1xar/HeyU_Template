@@ -531,10 +531,6 @@ blockquote:hover {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-	header {
-		background-color: rgb(217,6,71);
-	}
-
 	.iphone {
 		display: none;
 	}
@@ -675,10 +671,6 @@ blockquote:hover {
 */
 
 @media (min-width: 767px) {
-	header {
-		background-color: rgb(217,6,71);
-	}
-
 	.main-nav li:nth-child(n+2) {
 		opacity: 1 !important;
 		visibility: visible !important;
@@ -687,10 +679,6 @@ blockquote:hover {
 }
 
 @media (min-width: 482px) and (max-width: 767px) {
-	header {
-		background-color: rgb(217,6,71);
-	}
-
 	.main-nav {
 		flex-direction: column;
 		align-items: center;
@@ -948,10 +936,6 @@ blockquote:hover {
 */
 
 @media (min-width: 320px) and (max-width: 481px) {
-	header {
-		background-color: rgb(217,6,71);
-	}
-
 	.main-nav {
 		flex-direction: column;
 		align-items: center;
