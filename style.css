@@ -686,7 +686,6 @@ blockquote:hover {
 
 	.main-nav li {
 		font-size: 20pt;
-		line-height: 1.8em;
 	}
 
 	.main-nav li:nth-child(n+2) {
@@ -694,6 +693,7 @@ blockquote:hover {
 		opacity: 0;
 		visibility: hidden;	
 		max-height: 0;
+		line-height: 1.8em;
 		-webkit-transition: opacity 600ms, visibility 600ms;
   		transition: opacity 0.2s, visibility 0.2s;
   		transition: max-height 0.2s ease-in-out;
@@ -706,7 +706,7 @@ blockquote:hover {
 		color: white;
 		-webkit-user-select: none;
   		user-select: none;
-  		top: 1.5em;
+  		top: 1.2em;
 	}
 
 	#nav-toggle input {
@@ -943,7 +943,6 @@ blockquote:hover {
 
 	.main-nav li {
 		font-size: 20pt;
-		line-height: 1.8em;
 	}
 
 	.main-nav li:nth-child(n+2) {
@@ -951,6 +950,7 @@ blockquote:hover {
 		opacity: 0;
 		visibility: hidden;	
 		max-height: 0;
+		line-height: 1.8em;
 		-webkit-transition: opacity 600ms, visibility 600ms;
   		transition: opacity 0.2s, visibility 0.2s;
   		transition: max-height 0.2s ease-in-out;
@@ -963,7 +963,7 @@ blockquote:hover {
 		color: white;
 		-webkit-user-select: none;
   		user-select: none;
-  		top: 1.5em;
+  		top: 1.2em;
 	}
 
 	#nav-toggle input {
