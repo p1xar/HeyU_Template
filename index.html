@@ -16,7 +16,7 @@
 						<input type="checkbox" />
 						<span></span>
 						<span></span>
-    				<span></span>
+    					<span></span>
 					</div>
 					<li><a href = "#">ABOUT</a></li>
 					<li><a href = "#">FAQ</a></li>
@@ -152,7 +152,7 @@ ex ea commodo consequat.</h3>
 					} else {
 						$(".main-nav li:nth-child(n+2)").css("opacity","0");
 						$(".main-nav li:nth-child(n+2)").css("visibility","hidden");
-						$(".main-nav li:nth-child(n+2)").css("max-height","0");
+						$(".main-nav li:nth-child(n+2)").css("max-height","0em");
 						flag = 0;
 					}
 				}
@@ -169,6 +169,16 @@ ex ea commodo consequat.</h3>
 				    target[0].style.boxShadow = "0 0 0 rgba(0, 0, 0, 0)"; 
 				  }
 				},false);
+
+				window.addEventListener("resize", function() {
+					if ($(this).width() >= 768) {
+						$(".main-nav li:nth-child(n+2)").css("max-height","initial");	
+					}
+					if ($(this).width() < 768) {
+						$(".main-nav li:nth-child(n+2)").css("max-height","0em");	
+					}
+					
+				});
 		</script>
 	</body>
 </html>

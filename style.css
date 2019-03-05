@@ -89,7 +89,7 @@ nav {
 }
 
 .main-nav {
-	justify-content: space-between;
+	align-items: center;
 }
 
 .main-nav a:hover {
@@ -103,7 +103,7 @@ nav {
 
 .main-nav li:nth-child(n+2) {
 	margin-right: 2em;
-	margin-top: 0.6em;
+	max-height: initial;
 }
 
 .main-nav li:last-child {
@@ -487,6 +487,10 @@ blockquote:hover {
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+	.main-nav li:nth-child(n+2) {
+		max-height: initial;
+	}
+
 	.iphone {
 		display: block;
 	}
@@ -674,7 +678,7 @@ blockquote:hover {
 	.main-nav li:nth-child(n+2) {
 		opacity: 1 !important;
 		visibility: visible !important;
-		max-height: auto;	
+		max-height: initial;	
 	}
 }
 
