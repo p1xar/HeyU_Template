@@ -674,7 +674,7 @@ blockquote:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 	.main-nav li:nth-child(n+2) {
 		opacity: 1 !important;
 		visibility: visible !important;
@@ -1084,7 +1084,7 @@ blockquote:hover {
 	}
 
 	.messaging-container h1, #keep-in-touch h1 {
-		font-size: 42pt;
+		font-size: 40pt;
 	}
 
 	.keep-in-touch, .keep-in-touch-container {

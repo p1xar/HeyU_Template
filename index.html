@@ -148,11 +148,13 @@ ex ea commodo consequat.</h3>
 						$(".main-nav li:nth-child(n+2)").css("opacity","1");
 						$(".main-nav li:nth-child(n+2)").css("visibility","visible");
 						$(".main-nav li:nth-child(n+2)").css("max-height","3em");
+						$("header").css("background","rgb(217,6,71)").css("boxShadow","0 1px 10px rgba(0, 0, 0, 0.3)");
 						flag = 1;
 					} else {
 						$(".main-nav li:nth-child(n+2)").css("opacity","0");
 						$(".main-nav li:nth-child(n+2)").css("visibility","hidden");
 						$(".main-nav li:nth-child(n+2)").css("max-height","0em");
+						$("header").css("background","none").css("boxShadow","0 0 0 rgba(0, 0, 0, 0)");
 						flag = 0;
 					}
 				}
